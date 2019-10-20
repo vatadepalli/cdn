@@ -1,7 +1,7 @@
-args
-control
-functions
-loops
-operators
-vars
+tinyurl.com/banna-args
+tinyurl.com/banna-control
+tinyurl.com/banna-functions
+tinyurl.com/banna-loops
+tinyurl.com/banna-operators
+tinyurl.com/banna-vars
 
