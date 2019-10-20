@@ -5,15 +5,15 @@ wget tinyurl.com/banna-loops
 wget tinyurl.com/banna-operators
 wget tinyurl.com/banna-vars
 
-raw.githubusercontent.com/vatadepalli/cdn/master/exec.c     
-raw.githubusercontent.com/vatadepalli/cdn/master/fork.c     
-raw.githubusercontent.com/vatadepalli/cdn/master/orphan.c   
-raw.githubusercontent.com/vatadepalli/cdn/master/signal.c   
-raw.githubusercontent.com/vatadepalli/cdn/master/unrpipes.c 
-raw.githubusercontent.com/vatadepalli/cdn/master/wait.c
-raw.githubusercontent.com/vatadepalli/cdn/master/execsh.c   
-raw.githubusercontent.com/vatadepalli/cdn/master/npipes.c   
-raw.githubusercontent.com/vatadepalli/cdn/master/pipes.c    
-raw.githubusercontent.com/vatadepalli/cdn/master/thread.c   
-raw.githubusercontent.com/vatadepalli/cdn/master/unwpipes.c 
-raw.githubusercontent.com/vatadepalli/cdn/master/zombie.c
+wget raw.githubusercontent.com/vatadepalli/cdn/master/exec.c     
+wget raw.githubusercontent.com/vatadepalli/cdn/master/fork.c     
+wget raw.githubusercontent.com/vatadepalli/cdn/master/orphan.c   
+wget raw.githubusercontent.com/vatadepalli/cdn/master/signal.c   
+wget raw.githubusercontent.com/vatadepalli/cdn/master/unrpipes.c 
+wget raw.githubusercontent.com/vatadepalli/cdn/master/wait.c
+wget raw.githubusercontent.com/vatadepalli/cdn/master/execsh.c   
+wget raw.githubusercontent.com/vatadepalli/cdn/master/npipes.c   
+wget raw.githubusercontent.com/vatadepalli/cdn/master/pipes.c    
+wget raw.githubusercontent.com/vatadepalli/cdn/master/thread.c   
+wget raw.githubusercontent.com/vatadepalli/cdn/master/unwpipes.c 
+wget raw.githubusercontent.com/vatadepalli/cdn/master/zombie.c
