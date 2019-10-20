@@ -1,7 +1,7 @@
-tinyurl.com/banna-args
-tinyurl.com/banna-control
-tinyurl.com/banna-functions
-tinyurl.com/banna-loops
-tinyurl.com/banna-operators
-tinyurl.com/banna-vars
+wget tinyurl.com/banna-args
+wget tinyurl.com/banna-control
+wget tinyurl.com/banna-functions
+wget tinyurl.com/banna-loops
+wget tinyurl.com/banna-operators
+wget tinyurl.com/banna-vars
 
