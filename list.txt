@@ -5,3 +5,15 @@ wget tinyurl.com/banna-loops
 wget tinyurl.com/banna-operators
 wget tinyurl.com/banna-vars
 
+exec.c     
+fork.c     
+orphan.c   
+signal.c   
+unrpipes.c 
+wait.c
+execsh.c   
+npipes.c   
+pipes.c    
+thread.c   
+unwpipes.c 
+zombie.c
