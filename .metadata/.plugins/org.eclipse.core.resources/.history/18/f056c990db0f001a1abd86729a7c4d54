@@ -1,0 +1,22 @@
+1. Create JDBC  based standalone java  application  for student management.
+
+Table : create table students(id number(5) primary key,name varchar2(20),email varchar2 (20) unique ,address varchar2(10), phone_no varchar2(10),course_name varchar2(15),marks number(4,1));
+
+Insert some student detailis & commit.
+
+Create Student POJO & Student Dao & Tester for the following requirements.
+
+1. Display All students by the specified course name
+I/P -- course name
+O/P List of students from the specified course (Use lambda expression or method reference for display)
+
+
+2. Update Student details (update marks & phone number)
+I/Ps accepted from user -- id , new marks & new phone number.
+O/P --If student by specified id doesn't exist , throw custom exception (Student not found exception)
+Otherwise  values should be updated in DB & give updations successful message.
+
+3. Cancel Student admission.
+I/P email
+O/P --If student by specified email doesn't exist , throw custom exception (Student not found exception)
+Otherwise  student record should be deleted from DB.
