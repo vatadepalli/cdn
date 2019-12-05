@@ -1,0 +1,9 @@
+#!/bin/sh
+dir=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
+myvar="$*"
+# myvar="cool thing"
+echo $myvar
+git add .
+git commit -m "$myvar"
+git push origin master
+pwd
