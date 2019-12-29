@@ -1,0 +1,90 @@
+1. ------- Host Names & Hosts -----------
+
+Manager Node – 192.168.1.103 (hostname - dockermanager)
+Worker Node1 – 192.168.1.107 (hostname – dockerworker1)
+Worker Node2 – 192.168.1.108 (hostname - dockerworker2)
+
+192.168.1.103  dockermanager
+192.168.1.107  dockerworker1
+192.168.1.108  dockerworker2
+
+After modifying with the above details in the hosts file, check the connectivity with ping between all the nodes.
+
+2. ---------- Ping Test -------------------
+
+3. ---------- Install Docker --------------
+
+Install and Run Docker Service
+------------------------------
+# apt-get update
+
+# apt-get install apt-transport-https ca-certificates curl software-properties-common -y
+
+# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+Use the following command to set up the stable repository:
+
+# add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+Again update the apt package:
+
+# apt-get update
+
+# apt-get install docker-ce
+
+# systemctl start docker
+# systemctl enable docker
+
+
+# usermod -aG docker <username>
+# usermod -aG docker manager
+# usermod -aG docker worker1
+# usermod -aG docker worker2
+Now, login as designated user and run the docker hello-world to verify.
+# su - manager
+$ docker run hello-world
+
+
+4. ----------------- SWARM ---------------------
+
+docker swarm init --advertise-addr <manager node IP address>
+$ docker swarm init --advertise-addr 192.168.1.103
+
+
+5. ------------------- JOIN SWARM -------------------
+
+$ docker swarm join --token SWMTKN-1-4htf3vnzmbhc88vxjyguipo91ihmutrxi2p1si2de4whaqylr6-3oed1hnttwkalur1ey7zkdp9l 192.168.1.103:2377
+
+6. ----------------- VERIFY -----------------------
+
+$ docker node ls
+
+7. ------------------- BS ------------------------
+
+If at any time, you lost your join token, it can be retrieved by running the following command on the manager node for the manager token:
+
+$ docker swarm join-token manager -q
+The same way to retrieve the worker token run the following command on the manager node:
+
+$ docker swarm join-token worker -q
+
+8. ------------- SERVICE NGINX ---------------------
+
+$ docker service create --name my-web1 --publish 8081:80 --replicas 2 nginx
+
+$ docker service ls
+
+docker service ps <service name>
+$ docker service ps my-web1
+
+
+If we need to check whether nginx service is working fine, either we can use the curl command or check in the browser on host machine for the nginx web server welcome page.
+
+$ curl http://dockermanager:8081
+
+9. --------------- SCALING --------------------------
+
+$ docker service scale my-web1=3
+
+
+10. -------------- LEAVE ---------------------------
+
+docker swarm leave
