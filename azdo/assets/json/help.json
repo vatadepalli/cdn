@@ -1,0 +1,6 @@
+{
+  "sinet" : {
+    "heading": "SI-NET",
+    "Text": "<p>Whether the URL to be scanned can be accessed from outside SI-NET.</p><ul><li>Choose '<strong>Internal</strong>' if the url can accessed from inside SI-NET only. Choosing this option will run the scan on an <strong>agent inside SI-NET.</strong></li><li>Choose '<strong>External</strong>' if the url can accessed from outside SI-NET too. Choosing this option will run the scan on any agent available.</li></ul>"
+  }
+}
